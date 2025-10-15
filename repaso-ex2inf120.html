@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Repaso: Métodos e Instrucciones if</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      background: #f4f7ff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .wrap { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h1 { color: #0a3a8a; }
+    h2 { color: #0d4dbd; margin-top: 40px; }
+    code, pre {
+      background: #eef2ff;
+      border: 1px solid #ccd5ff;
+      border-radius: 6px;
+      padding: 4px 6px;
+      font-family: Consolas, monospace;
+    }
+    pre { padding: 10px; overflow-x: auto; }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Repaso: Métodos e Instrucciones <code>if</code></h1>
+    <p>Ejercicios de práctica para reforzar el uso de <b>métodos</b> y <b>condiciones</b> en Java.</p>
+
+    <div class="card">
+      <h2>🧩 Problema 1: Evaluador de descuentos</h2>
+      <p><b>Contexto:</b> Una tienda en línea desea calcular el precio final de una compra según el monto.</p>
+      <ul>
+        <li>Si el monto ≥ 100 → descuento del 15%</li>
+        <li>Si el monto entre 50 y 99.99 → descuento del 10%</li>
+        <li>Si el monto &lt; 50 → sin descuento</li>
+      </ul>
+
+      <h3>🎯 Tareas</h3>
+      <ol>
+        <li>Escribe el método:
+          <pre><code>static double aplicarDescuento(double monto)</code></pre>
+          que devuelva el precio final luego del descuento.
+        </li>
+        <li>En el <code>main</code>, pide el monto al usuario y muestra el resultado con 2 decimales.</li>
+      </ol>
+
+      <h3>💻 Ejemplo de ejecución</h3>
+      <pre><code>Monto de compra: 85
+Precio final: 76.50</code></pre>
+    </div>
+
+    <div class="card">
+      <h2>🧩 Problema 2: Clasificador de temperatura</h2>
+      <p><b>Contexto:</b> Un sistema meteorológico clasifica la temperatura según su valor:</p>
+      <table border="1" cellpadding="5" style="border-collapse:collapse;border-color:#ccc;">
+        <tr><th>Temperatura (°C)</th><th>Clasificación</th></tr>
+        <tr><td>≤ 0</td><td>Congelante</td></tr>
+        <tr><td>1 – 15</td><td>Fría</td></tr>
+        <tr><td>16 – 25</td><td>Agradable</td></tr>
+        <tr><td>26 – 35</td><td>Cálida</td></tr>
+        <tr><td>&gt; 35</td><td>Calurosa</td></tr>
+      </table>
+
+      <h3>🎯 Tareas</h3>
+      <ol>
+        <li>Implementa el método:
+          <pre><code>static String clasificarTemperatura(double t)</code></pre>
+          que retorne la categoría correspondiente.
+        </li>
+        <li>En el <code>main</code>, lee una temperatura y muestra algo como:
+          <pre><code>Temperatura: 27°C → Cálida</code></pre>
+        </li>
+      </ol>
+
+      <h3>💡 Pista</h3>
+      <p>Usa <b>if – else if – else</b> para evaluar los rangos.</p>
+    </div>
+
+    <footer>
+      © 2025 <b>Antonio Vantaggiato</b> — con la colaboración de ChatGPT.
+    </footer>
+  </div>
+</body>
+</html>
